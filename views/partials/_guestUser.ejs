@@ -1,0 +1,11 @@
+    <script src="/scripts/guestUserLogic.js"></script>
+    <script src="/scripts/nav_footLogic.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"></script>
+    <script>
+        var username = getUsername();
+        var guestUser = isUserGuest(username);
+        updateNavItems(guestUser);
+        var holdOpen = false; //drop menu variables
+        var holdLength = 750;
+        var hideTimer;
+    </script>
